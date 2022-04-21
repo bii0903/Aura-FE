@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Đăng kí</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link rel="stylesheet" type="text/css" href="resgiter.css">
+	<link rel="shortcut icon" href="img/shortcuticon.jpg">
+	<script type="text/javascript">
+    function checkEmail() {
+        var email = document.getElementById('email');
+        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        if (!filter.test(email.value)) {
+            alert('Hay nhap dia chi email hop le.\nExample@gmail.com');
+            email.focus;
+            return false;
+        }
+    }
+    function checkPhone(){
+	  var regExp = /^(0[234][0-9]{8}|1[89]00[0-9]{4})$/;
+	  var phone = document.getElementById("phone").value;
+  if (regExp.test(phone)) 
+      alert('SĐT hợp lệ!'); 
+    else 
+        alert('SĐT không hợp lệ!');
+	}
+</script>
+</head>
+<body>
+	<div class="title">
+			<h2><a href="../main.html">Aura Watch</a></h2>
+		</div>
+	<div class="frmdk">	
+				<br>
+				<h1>Đăng kí</h1>
+				<div class="">
+					<input type="text" placeholder="Họ tên"><br>
+					<input type="text" placeholder="Tên đăng nhập"><br>
+					<input type="password" placeholder="Mật khẩu"><br>
+					<input type="password" placeholder="Nhập lại mật khẩu"><br>
+					<input type="text" placeholder="Email" id="email" name="email"><br>
+					<input type="text" placeholder="Số điện thoại" id="phone" onclick="checkPhone()"><br>
+				</div>
+				<div class="">
+					<input type="button" value="Đăng kí" name="checkmail" class="btn btn-dark" onclick="checkEmail()"><br>
+				</div>
+				<div class="login">
+					<p>Đã có tài khoản? <a href="login.html">Đăng nhập tại đây.</a></p>
+				</div>
+	</div>
+</body>
+</html>

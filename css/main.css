@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bg-header{
+    width: 100%;
+    height: 650px;
+    background-image: url(../img/bg-header/bg4.jpg);
+    background-size:cover;
+    animation: fade 20s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+@keyframes fade{
+    0%{
+        background-image: url(../img/bg-header/bg4.jpg);
+    }
+    30%{
+        background-image: url(../img/bg-header/bg1.jpg);
+    }
+    60%{
+        background-image: url(../img/bg-header/bg3.jpg);
+    }
+    90%{
+        background-image: url(../img/bg-header/bg2.jpg);
+    }
+}
+#header{
+    height: 80px;
+    display: flex;
+    flex-direction:row;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0;
+    position: fixed;
+    transition: top 0.3s;
+    width: 100%;
+}
+.logo{
+    width:40%;
+    height:70px ;
+    text-align: center;
+}
+.logo img{
+    height: 70px;
+    width: 220px;
+    object-fit:cover;
+    margin: 5px 0px;
+    opacity: 0.3;
+}
+.user{
+    margin-left: auto;
+    margin-right: 30px;
+    margin-top: 30px;
+    font-size: 25px;
+}
+.user a{
+    text-decoration: none;
+    color: white;
+}
+
+/* nav */
+.menu{
+    width: 30%;
+}
+.overlay{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    background-color: #212121;
+    transition: ease 0.5s;
+    overflow-x: hidden;
+}
+.overlay-content{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    margin-top: 60px;
+}
+.overlay-content a{
+    padding: 10px 10px 20px 10px;
+    text-decoration: none;
+    font-size:25px;
+    border-bottom: 1px solid #f1f1f1;
+    color: white;
+    transition: 1.5s;
+    margin-top: 15px;
+}
+.overlay a:hover{
+    color: #B45F04;
+}
+.overlay .btn-close{
+    position: absolute;
+    right: 10px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+.search{
+    height: 40px;
+    border-radius: 10px 0px 0px 10px;
+    font-size: 18px;
+    padding: 10px;
+    width: 70%;
+    border: none;
+}
+.btn-search{
+    width: 30px;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    background-color: white;
+    border-radius: 0px 10px 10px 0px;
+    margin-bottom: 20px;
+    color: #ccc ;
+    margin-left: -4px;
+}
+.btn-search:focus,.btn-search:hover{
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    color: black;
+}
+.open-nav{
+    font-size:22px;
+    color: white;
+    cursor:pointer;
+}
+.user a:hover, .open-nav:hover{
+    color: goldenrod;
+}
+.text-header{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-family: monospace;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    margin-top: 20%;
+}
+.text-header p{
+    font-size: 26px;
+}
+
+
+
+/*responsive header */
+@media screen and (max-width:918px){
+    .bg-header{
+        height: 350px;
+    }
+    .overlay-content a, .open-nav,.user{
+        font-size: 15px;
+    } 
+    .overlay-content a{
+        margin: 10px 0;
+        padding: 5px 5px 10px 5px;
+    }
+    .overlay{
+        height: auto;
+    }
+    .search,.btn-search{
+        font-size: 13px;
+    }
+    .logo ,.logo img{
+        height: 55px;
+    }
+    .logo img{
+        width: 180px;
+    }
+    .text-header{
+        font-size:15px;
+        margin-top: 35%;
+    }
+    .text-header p{
+        font-size: 12px;
+    }
+    #header{
+        height: 60px;
+    }
+}
+
+
+/* introduce (gioi thieu) */
+
+.introduce{
+    width: 100%;
+    height:350px;
+    background-color:#F5F5F5;
+    overflow: hidden;
+    display: block;
+}
+.introduce-text{
+    width:80% ;
+    margin: auto; 
+    padding: 4% 0;
+    font-family: calibri;
+}
+.introduce-text h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+   transition: 1s;
+   height: 40%;
+   margin-left: -1550px;
+
+}
+.introduce-text p{
+    font-size: 18px;
+    font-family: calibri;
+    transition: 1s;
+    height: 30%;
+    margin-left: 1550px;
+}
+.introduce a{
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    width: 180px;
+    height: 40px;
+    border: 1px solid #006600;
+    border-radius: 10px;
+    color: #006600;
+    display: block;
+    margin-top: 30px;
+    height: 30%;
+    transition: 0.5s;
+}
+.introduce a:hover{
+    background-color: #006600;
+    color: white;
+}
+
+@media screen and (max-width:918px){
+    .introduce-text h1{
+        font-size: 20px;
+    }
+    .introduce-text p{
+        font-size: 15px;
+    }
+    .introduce a{
+        line-height: 30px;
+        width: 110px;
+        height: 30px;
+        font-size: 15px; 
+        margin-top: 20px
+    }
+}
+
+
+/* classify phân loại */
+
+.aura-watch{
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    font-family: Barlow;
+}
+.aura-watch h1{
+    font-size: 48px;
+    letter-spacing: 1px;
+}
+.aura-watch p{
+    font-size: 20px;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+}
+.classify{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+    justify-content: center;
+}
+.classify a{
+    height: auto;
+    width: 100px;
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+}
+.classify img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    padding: 6px; 
+   
+}
+.classify p{
+    font-size: 15px; 
+    transition: 0.5s;
+}
+.classify a:hover{
+    color: #ccc;
+   
+}
+.classify a:hover img{
+    border: 1px solid gold;
+}
+.share{
+    clear: both;
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    font-family: barlow;
+}
+.share h3{
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+}
+.share-link a{
+    height: auto;
+    width: 100px;
+    text-decoration: none;
+    color:#006600;
+    margin: 40px 20px;
+    border: 1px solid ;
+    padding:10px;
+    font-size: 14px;
+    border-radius: 50%;
+}
+.share-link a:hover{
+    background-color: #006600;
+    color: white;
+}
+
+

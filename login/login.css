@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Courier New;
+}
+input[type = "text"], input[type = "password"] {
+	border: 0;
+    background: none;
+    display: block;
+    border: 1px solid black;
+    padding: 14px 10px 20px 0px;
+    outline: none;
+    color: black;
+    border-radius: 12px;
+    transition: 0.25s;
+    width: 510px;
+    text-align: center;
+    height: 49.2px;
+}
+h1 {
+	transition: 1s;
+    text-align: center;
+    margin-left: -1000px;
+}
+input[type = "button"] {
+	height: 61px;
+	width: 300px;
+	margin-left: 70px;
+	border-radius: 12px;
+	font-size: 20px;
+    background-color: black;
+    color: white;
+    font-family: Courier New;
+}
+.frm {
+    padding: 10% 0% 0% 35%;
+}
+h5 {
+    font-size: 17px;
+}
+

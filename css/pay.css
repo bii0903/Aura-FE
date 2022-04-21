@@ -1,0 +1,97 @@
+* {
+	font-family: 'Roboto', sans-serif;
+}
+.linkmain h2{
+	font-weight: 600;
+	margin-left: 166px;
+	padding: 55px 0px 0px 0px;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+}
+.linkmain a {
+	color: black;
+	text-decoration: none;
+}
+.listcontent {
+	margin-left: 125px;
+}
+.listcontent li {
+	list-style: none;
+	display: inline-block;
+	padding: 0px 15px 10px 0px;
+	font-size: 13px;
+}
+.listcontent a {
+	color: #1990c6;
+	text-decoration: none;
+}
+.option {
+	padding-bottom: 15px;
+	font-size: 13px;
+}
+.pay {
+	text-align: center;
+}
+.paypal img {
+	border-radius: 16px;
+	width: 250px;
+	height: 80px;
+}
+.right {
+	float: right;
+	margin-right: 166px;
+	font-size: 13px;
+}
+.linkmain h3 {
+	font-weight: 600;
+	margin-left: 166px;
+	letter-spacing: 1px;
+	word-spacing: 1px;
+}
+input[type="text"] {
+	width: 1000px;
+	height: 40px;
+    box-sizing: border-box;
+    border: 1px transparent solid black;
+    border-radius: 3px;
+    outline:none;
+    margin-left: 166px;
+}
+.adress {
+  margin-bottom: 15px;
+}
+.oderbtn {
+	text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 40px;
+    width: 180px;
+    height: 40px;
+    border: 1px solid #1990c6;
+    border-radius: 10px;
+    background-color: #1990c6;
+    color: white;
+    margin-top: 30px;
+    height: 30%;
+    margin-left: 166px;
+}
+.combackcart {
+	position: absolute;
+	text-decoration: none;
+	color: #1990c6;
+	font-size: 14px;
+	font-weight: 500;
+	left: 400px;
+	bottom: 70px;
+}
+.order a {
+	display: block;
+}
+.oder {
+	position: relative;
+}
+hr {
+	text-align: center;
+	width: 70%;
+}
